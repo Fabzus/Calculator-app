@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="conatiner">
+        <div class="calculator-container">
+          <div class="calculator-header">
+            <div class="header-title">
+              <h2>calc</h2>
+            </div>
+            <div class="theme-container">
+              <p>THEME</p>
+              <div class="theme-selector">
+                <div class="theme-numbers">
+                  <p>1</p>
+                  <p>2</p>
+                  <p>3</p>
+                </div>
+                <div class="selector-container">
+                  <div id="dark" class="theme dark"></div>
+                  <div id="light" class="theme light"></div>
+                  <div id="wave" class="theme wave"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="display" class="calculator-display"></div>
+          <div class="calculator-keyboard">
+            <div class="row">
+              <div class="key align" id="7"><p>7</p></div>
+              <div class="key align" id="8"><p>8</p></div>
+              <div class="key align" id="9"><p>9</p></div>
+              <div class="key-function align" id="DEL"><span>DEL</span></div>
+            </div>
+            <div class="row">
+              <div class="key align" id="4">4</div>
+              <div class="key align" id="5">5</div>
+              <div class="key align" id="6"><p>6</p></div>
+              <div class="key align" id="+"><p>+</p></div>
+            </div>
+            <div class="row">
+              <div class="key align" id="1"><p>1</p></div>
+              <div class="key align" id="2"><p>2</p></div>
+              <div class="key align" id="3"><p>3</p></div>
+              <div class="key align" id="-"><p>-</p></div>
+            </div>
+            <div class="row">
+              <div class="key align" id="."><p>.</p></div>
+              <div class="key align" id="0"><p>0</p></div>
+              <div class="key align" id="/"><p>/</p></div>
+              <div class="key align" id="*"><p>x</p></div>
+            </div>
+            <div class="row">
+              <div class="key-function align" id="RESET">
+                <span>RESET</span>
+              </div>
+              <div class="key-equal align" id="EQUAL"><span>=</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/alinbalog/">Balog Alin</a>.
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

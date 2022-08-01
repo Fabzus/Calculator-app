@@ -1,0 +1,235 @@
+:root {
+  /* THEME 1 */
+  --t1-main-background: hsl(222, 26%, 31%);
+  --t1-secondary-background: hsl(223, 31%, 20%);
+  --t1-display-background: hsl(224, 36%, 15%);
+
+  --t1-blue-key-background: hsl(225, 21%, 49%);
+  --t1-blue-key-shadow: hsl(224, 28%, 35%);
+  --t1-red-key-background: hsl(6, 63%, 50%);
+  --t1-red-key-shadow: hsl(6, 70%, 34%);
+  --t1-grey-key-background: hsl(30, 25%, 89%);
+  --t1-grey-key-shadow: hsl(28, 16%, 65%);
+
+  --t1-key-text: hsl(221, 14%, 31%);
+  --t1-text: white;
+  --t1-display: white;
+  /* THEME 1 */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+html {
+  font-family: "League Spartan", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+main {
+  background-color: var(--t1-main-background);
+}
+
+h2 {
+  font-size: 3rem;
+}
+.attribution {
+  color: var(--t1-display);
+
+  font-size: 11px;
+  text-align: center;
+  transition: color 0.6s;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  color: var(--t1-red-key-background);
+  transition: color 0.6s;
+}
+
+/* RESET STYLES STOP*/
+
+.conatiner {
+  width: 100%;
+  height: calc(100vh - 12px);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: min(50%, 35rem);
+}
+
+/* ====CALCULATOR HEADER======== */
+.calculator-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  color: var(--t1-display);
+  margin-bottom: 2rem;
+  transition: color 0.6s;
+}
+
+.calculator-header .theme-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.calculator-header .theme-container > p {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+
+.calculator-header .theme-container .theme-numbers {
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selector-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 6.5rem;
+  height: 2.5rem;
+  background-color: var(--t1-secondary-background);
+  border-radius: 0.7rem;
+  padding: 0 0.5rem;
+}
+
+.selector-container .theme {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  position: relative;
+}
+
+.selector-container .theme.dark {
+  background-color: var(--t1-red-key-background);
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity color 0.6s ease-in-out;
+}
+.selector-container .theme.light {
+  background-color: var(--t1-red-key-background);
+  opacity: 0;
+  cursor: pointer;
+  transition: color opacity color 0.6s ease-in-out;
+}
+.selector-container .theme.wave {
+  background-color: var(--t1-red-key-background);
+  opacity: 0;
+  cursor: pointer;
+  transition: color opacity color 0.6s ease-in-out;
+}
+/* ====CALCULATOR HEADER======== */
+
+/* ====CALCULATOR DISPLAY======== */
+.calculator-display {
+  background-color: var(--t1-display-background);
+  width: 100%;
+  height: 7rem;
+  border-radius: 1rem;
+  color: var(--t1-display);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 3rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  transition: color 0.3s;
+}
+/* ====CALCULATOR DISPLAY======== */
+
+/* ===========KEYS================= */
+.calculator-keyboard {
+  background-color: var(--t1-secondary-background);
+  border-radius: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  transition: color 0.3s;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.align {
+  width: 100%;
+  height: 4rem;
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.key {
+  background-color: var(--t1-grey-key-background);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px var(--t1-grey-key-shadow);
+  color: var(--t1-key-text);
+  transition: filter 0.3s;
+  transition: color 0.6s;
+}
+
+.key-function {
+  background-color: var(--t1-blue-key-background);
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px var(--t1-blue-key-shadow);
+  color: var(--t1-text);
+  transition: filter 0.3s;
+  transition: color 0.6s;
+}
+
+.key-equal {
+  background-color: var(--t1-red-key-background);
+  box-shadow: 0px 2px var(--t1-red-key-shadow);
+  border-radius: 0.5rem;
+  color: var(--t1-text);
+  transition: filter 0.3s;
+  transition: color 0.6s;
+}
+
+.key:hover {
+  filter: brightness(1.2);
+}
+
+.key-function:hover {
+  filter: brightness(1.2);
+}
+
+.key-equal:hover {
+  filter: brightness(1.2);
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 600px) {
+  .calculator-container {
+    margin: 2rem;
+    width: 100%;
+  }
+}
