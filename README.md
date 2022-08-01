@@ -22,7 +22,7 @@ This is a solution to the [Calculator app](https://www.frontendmentor.io/challen
 ### Links
 
 - Solution URL: [github](https://github.com/Fabzus/Calculator-app)
-- Live Site URL: [github](https://fabzus.github.io/Interactive-rating-component/)
+- Live Site URL: [github](https://fabzus.github.io/Calculator-app/)
 
 ## My process
 
